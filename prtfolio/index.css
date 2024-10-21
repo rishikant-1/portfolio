@@ -11,3 +11,11 @@ body, html{
 h1{
   color: white;
 }
+.container{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: space-between;
+}
