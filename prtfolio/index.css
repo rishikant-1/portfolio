@@ -1,21 +1,152 @@
-*{
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-body, html{
+
+body, html {
   height: 100%;
   width: 100%;
-  box-sizing: border-box;
-  background-color: #151515;
+  background-color: #000000;
+  font-family: cursive;
 }
-h1{
+
+h1 {
   color: white;
+  margin-left: 5%;
 }
-.container{
-  display: flex;
-  height: 80px;
+
+h1 span {
+  color: rgb(249, 229, 4);
+}
+
+.container {
   width: 100%;
-  background-color: #ffffff;
-  align-items: center;
+  background-color: #3d3c3c53;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  backdrop-filter: blur(100px);
+}
+
+.container ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.container ul a {
+  color: rgb(228, 202, 28);
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+}
+.container  a::after{
+  content: ' ';
+  width:0;
+  height: 3px;
+  background:#fff126;
+  position:absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+ul a:hover::after{
+  /* left: 100px; */
+  width: 100%;
+}
+.container ul a:hover{
+ 
+} 
+
+/* navbar complete */
+.main{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 87vh;
+  color: white;
+  gap: 27vw;
+}
+.mainText{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-left: 10%;
+}
+.mainText h1{
+  margin-left: 0px;
+  /* margin-bottom: 10px; */
+}
+.mainText p{
+  font-size: 15px;
+  margin-bottom: -5px;
+  margin-top: 5px;
+}
+.mainText .name{
+  color: rgb(230, 223, 28);
+  font-size: 40px;
+  font-weight: 700;
+}
+button{
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 20px;
+  background-color: #fff126;
+  border: none;
+}
+.image{
+  position: relative;
+}
+.image img{
+  position: relative;
+}
+.image .content{
+  content: "";
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background-color: #c8b11f;
+  position: relative;
+  top: 90px;
+  left: -10px;
+  position: absolute;
+}
+.image .content2{
+  content: "";
+  height: 295px;
+  width: 295px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: relative;
+  top: 250px;
+  left: 80px;
+  position: absolute;
+  
+}
+.infoContainer{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.infoImgBox img{
+  height: 600px;
+  margin-left: 100px;
+}
+.discription h1{
+  margin-left: -0px;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+.infoContainer p{
+  color: #fff;
+  max-width: 75%;
+  font-size: 13.5px;
 }

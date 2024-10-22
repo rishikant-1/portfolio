@@ -1,0 +1,90 @@
+@media screen and (max-width: 1100px) {
+  .main{
+    gap: 8vw;
+  }
+  .image img{
+    height: 500px;
+    opacity: .9;
+  }
+  .image .content{
+    height: 245px;
+    width: 245px;
+    top: 60px;
+  }
+  .image .content2{
+    height: 245px;
+    width: 245px;
+    top: 200px;
+    left: 40px;
+  }
+  .hText{
+    visibility: hidden;
+  }
+  .discription{
+    position: relative;
+    margin-top: 100px;
+  }
+  .infoContainer p{
+    font-size: 13px;
+  }
+  .discription h1{
+    font-size: 30px;
+  }
+  .discription button{
+    position: absolute;
+    bottom: 34%;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  .infoImgBox img{
+    height: 400px;
+    margin-left: 80px;
+  }
+}
+@media screen and (max-width: 585px) {
+  .main{
+    /* flex-direction: column; */
+    gap: 0;
+    height: 60vh;
+  }
+  .container ul{
+    visibility: hidden;
+  }
+  .mainText{
+    /* order: 2; */
+  }
+  .image img{
+    height: 250px;
+    /* opacity: .9; */
+  }
+  .mainText button{
+    padding: 8px 17px;
+    font-size: 10px;
+    background-color: #fff126;
+  }
+  .image .content{
+    height: 120px;
+    width: 120px;
+    top: 30px;
+    left: 1px;
+  }
+  .image .content2{
+    height: 120px;
+    width: 120px;
+    top: 95px;
+    left: 22px;
+  }
+  .infoContainer{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .infoImgBox img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    background-position: top;
+    
+  }
+}
